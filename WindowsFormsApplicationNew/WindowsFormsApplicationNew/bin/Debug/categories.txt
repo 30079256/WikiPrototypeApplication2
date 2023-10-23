@@ -1,0 +1,7 @@
+None
+Array
+List
+Tree
+Graphs
+Abstract
+Hash
