@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TextBoxSearch = new System.Windows.Forms.TextBox();
             this.ButtonSearch = new System.Windows.Forms.Button();
             this.LabelName = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@
             this.ButtonSave = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.ToolStripStatusLabelFeedback = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTipName = new System.Windows.Forms.ToolTip(this.components);
             this.GroupBoxStructure.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +89,7 @@
             this.TextBoxName.Name = "TextBoxName";
             this.TextBoxName.Size = new System.Drawing.Size(162, 20);
             this.TextBoxName.TabIndex = 0;
+            this.toolTipName.SetToolTip(this.TextBoxName, "Double click to clear textboxes");
             this.TextBoxName.Click += new System.EventHandler(this.TextBox_Enter);
             this.TextBoxName.DoubleClick += new System.EventHandler(this.TextBoxName_DoubleClick);
             // 
@@ -305,6 +308,7 @@
         private System.Windows.Forms.Button ButtonSave;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabelFeedback;
+        private System.Windows.Forms.ToolTip toolTipName;
     }
 }
 
